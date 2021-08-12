@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <style>
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 2%;
+        width: 88%;
+        box-sizing: border-box;
+      }
+
+      .icons {
+        width: 30px;
+        margin: 2px;
+      }
+      .googlingbar {
+        padding: 8px;
+        display: flex;
+        width: 100%;
+      }
+      .searchbox {
+        display: flex;
+        width: 60%;
+        padding: 0px;
+        box-shadow: 2px 2px 2px 2px rgba(59, 58, 58, 0.075);
+        border-radius: 40px;
+        height: 50px;
+      }
+      .searchbox input {
+        width: 100%;
+        height: 20px;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        padding: 3px;
+      }
+      .dot_svg {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+      }
+      .rhs {
+        display: flex;
+        margin-right: -130px;
+      }
+      .rhs img {
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+        margin-top: -10px;
+      }
+      .logo img {
+        width: 130px;
+      }
+      #results {
+        width: 70%;
+        margin: auto;
+      }
+      #results > div {
+        margin-bottom: 10x;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img
+          src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"
+          alt="Google"
+        />
+      </div>
+      <div class="searchbox">
+        <div class="googlingbar">
+          <input type="text" name="input" id="ip" onkeydown="onky(event)" />
+          <div class="icons">
+            <svg
+              class="goxjub"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="#4285f4"
+                d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z"
+              ></path>
+              <path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path>
+              <path
+                fill="#fbbc05"
+                d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z"
+              ></path>
+              <path
+                fill="#ea4335"
+                d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z"
+              ></path>
+            </svg>
+          </div>
+          <div class="icons">
+            <svg
+              focusable="false"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="rhs">
+        <div class="dot_svg">
+          <svg>
+            <path
+              d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"
+            ></path>
+          </svg>
+        </div>
+        <div>
+          <img src="data:image/png;base64,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" alt="user" />
+        </div>
+      </div>
+    </div>
+    <div id="results"></div>
+  </body>
+</html>
+<script>
+  let cont = document.getElementById("results");
+  async function check() {
+    let search = document.getElementById("ip").value;
+    try {
+      let res = await fetch(
+        `http://api.serpstack.com/search?access_key=0d7f0c4915519bb4a11fb458b7e868c3&query=${search}`
+      );
+      let data = await res.json();
+      console.log("data:", data);
+
+      let { organic_results, knowledge_graph } = data;
+      console.log(knowledge_graph);
+
+      attachIt(organic_results, knowledge_graph);
+    } catch (err) {
+      console.log(err, "went wrong");
+    }
+  }
+  function attachIt(el1, el2) {
+    cont.innerHTML = null;
+    let { description, image_urls } = el2;
+    // let description = el2.descriprion;
+    // let image_urls = el2.image_urls;
+    // el2 is an Object .. {} .. what are thekeys? .. description imageurls etc .. {description. image_urls}
+    let divv = document.createElement("div");
+    divv.innerHTML = `<img width=120px; src="https://1000logos.net/wp-content/uploads/2017/03/McDonalds-logo.png" /><p>${description}</p> `;
+    cont.append(divv);
+    el1.forEach(({ title, url, displayed_url }) => {
+      let div = document.createElement("div");
+      div.innerHTML = `<h3>${title}</h3><a href=${url}><p>${displayed_url}</p></a><br>
+          <h3>${title}</h3>`;
+      cont.append(div);
+    });
+  }
+  function onky(event) {
+    if (event.key === "Enter") {
+      console.log("clicked");
+      check();
+    }
+  }
+</script>
